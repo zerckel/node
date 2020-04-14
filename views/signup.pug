@@ -1,0 +1,19 @@
+doctype html
+html(lang="fr-FR")
+    head
+        title Register
+        meta(charset="utf-8")
+        link(href='css/style.css' rel="stylesheet")
+        link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet')
+    body
+    header.header
+        div
+            a(href="/") Login
+            a(href="/signup") Register
+    .wrapper.fadeInDown
+      #formContent
+        .fadeIn.first
+        form(action="/signup", method="post" )
+          input#login.fadeIn.second(type='text' name='mail' placeholder='Mail')
+          input#password.fadeIn.third(type='password' name='password' placeholder='Password')
+          input.fadeIn.fourth(type='submit' value='Register')
